@@ -1,0 +1,582 @@
+JavaScript : A popular scripting or programming language which has single threaded mechanism and synchronous to handle both client side and server side logic in web application
+
+-> client side javascript runs inside of a browser byusing javascript engine called v8(chrome) 
+
+-> JavaScript introduced by Brenden Eich in 1995 at Netscape communications 
+
+ECMAScript is a specification to implement one scripting language and javascript follows the standards of ES from 1997
+
+-> in 2015, ECMAScript released a greatest version called ES6 which has many asynchronous methods
+
+mocha -> livescript -> JavaScript
+
+-> JavaScript EcoSystem 
+
+	frontend : Angular,React,vue, next,ember
+	Backend: nodejs,express,deno.js
+	testing: Karma.js, Jasmine
+	machine learning: TensorFlow.js, brain.js,...
+
+
+use of JavaScript : 
+
+-> Data validation
+-> DOM Manipulation 
+-> HTML Manipulation 
+-> CSS Manipulation 
+-> Promises 
+-> Asynchronous operations
+
+-> JavaScript is dynamically typed language 
+
+
+
+
+
+how to add JavaScript to HTML : 
+
+	-> Internal : within the head or body of html we can write script tags to write javascript 
+	-> External : we can create separate .js file and add it to html using script src
+
+	<script src=""></script>
+
+
+
+
+
+output statements of JavaScript
+
+
+	1. document.write
+	2. innerHTML
+	3. console.log
+	4. alert
+
+
+document.write -> document is a active webpage in the browser and write is a method to print in the webpage
+
+
+	document.write("Hello world")
+
+innerHTML : when the html element is already existed in the document, we can pass data from javascript to it using innerHTML
+
+a=a+5;
+
+a+=5;
+
+console.log(): 
+
+
+Variables : variable is a named container to store the values during the execution of a program 
+
+-> identifiers used to name the variables in javascript 
+
+
+rules of identifiers : 
+
+	identifiers can contain both alpha numeric values
+	identifiers can have special characters $,_ only
+	identifiers name cannot start with a digit
+	identifiers are case sensitive 
+
+	camelCase coding format 
+	
+	getElementById
+
+Global variable : var
+
+Local variable : let
+
+
+
+
+
+
+
+Hoisting : the default behaviour of javascript in moving all the declarations to the top of the scope, i.e., we can use variable before its declarations 
+
+      firstName="bhaskaraa"
+      document.write(firstName);
+      var firstName;
+
+TDZ (temporary dead zone) : the time period between when we declare a variable with let or const and its initialization i.e., we cannot perform hoisting for let or const
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+Operators in js : 
+
+two ways 
+
+operators based on num of operands 
+
+unary operator : when we use single operand in a operation ;
+	increment,decrement
+	a=1;
+	a++;//a=a+1;
+
+binary : when we use two operands in operation 
+	arithmetic operators, relational,...
+	a+b;
+
+ternary : two or more 
+	conditional operator
+	
+	a=5;
+	b=7;
+	c = (a>b) ? a:b;
+
+operators based on type of operation : 
+
+Arithmetic : +,-,*,/,%,**
+
+	5/2=2.5
+	5%2=1
+
+
+Relational : >,>=,<,<=,==,!=,===,!==
+
+=
+== to compare only value
+=== to compare both value and datatype
+
+
+Assignment : =, +=,-=,......
+
+a=5;
+a=a+5;
+a+=5
+
+Logical : &&,||,!
+
+
+-> a,b,c =>   a>b && a>c
+-> a,b,c =>   a<b || a<c
+-> flag=true;
+newflag=!flag;
+
+Increment/Decrement :   
+
+Increment : ++
+
+a=a+1;
+
+post : a++ => next occurrence 
+pre : ++a => same occurrence 
+
+Decrement : --
+
+a=a-1;
+
+post
+pre
+
+Conditional : 
+
+c = a>b ? a:b;
+
+if num1 is greater than num2 => compare num1 and num3
+if num2 is greater than num1 => compare num2 and num3
+
+
+Bitwise : &, |, ^ , ~, <<, >>
+
+bits
+
+5 -> 0101
+7 -> 0111
+
+2^0 = 1  =>1
+2^1 = 2  =>1
+2^2 = 4  =>1
+2^3 = 8  =>0
+2^4 = 16
+
+AND (&) -> whenever both bits are 1 it returns 1 otherwise 0;
+
+
+5 -> 0101
+7 -> 0111
+ res = 0101 => 5
+
+OR (|) -> whenever any single bit is 1 it returns 1 otherwise 0
+
+5 -> 0101
+7 -> 0111
+  res=0111 = 7
+
+XOR (^) -> whenever both bits are different it returns 1 otherwise 0
+
+5 -> 0101
+7 -> 0111
+ res=0010 = 2 
+
+NOT (~) -> replace 0 with 1 and 1 with 0
+
+5 => ~5
+	positive=> -(x+1)
+	=> -6
+-5 => 	
+	+(5-1)
+	=>4
+
+
+<< : 0101 => 0100
+
+5<<2 => 1010 => 
+	left shift = x * 2^n
+		=> 5 * 2
+		=>10
+
+5>>1 => 0101 => 0010
+	right shift=> x/2^n
+
+BODMAS => brackets,of,division,mul,addition,subtraction
+
+control statements :  control statements used to control the execution flow of a program, based on a condition or until some condition satisfies we can execute a block of code
+
+we have two types of control statements 
+
+conditional : we can execute different blocks of code based on certain condition
+
+if, if else, if else ladder, nested if else, switch
+
+iterative : we can execute a block of code until a condition satisfies
+
+for, for in, for of, while , do-while
+
+
+
+
+
+
+
+
+
+
+
+
+introduction
+different ways to add js in html
+output statements
+variables
+operators
+conditional statements
+iterative 
+functions
+Arrays( and array methods) 
+Arrow functions (and closures)
+Strings ( and string methods)
+Objects ( and array of objects)
+Callbacks
+Promises
+Async and await
+Fetch
+DOM
+Event handling
+Event Listeners
+Exception Handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conditional Statements : 
+
+if, if else, nested if else, if else ladder, switch
+
+
+if statement : to execute a block of code upon satisfying the given condition
+
+syntax : 
+
+	if(condition)
+	{
+	//block of code
+
+	}
+
+
+if else : to execute two different blocks of code based on the result of the condition
+	
+	if(condition)
+	{
+		//true
+	}
+	else
+	{
+		//false
+
+	}
+
+NaN : Not a Number
+
+
+
+Nested if else : 
+
+
+	if(condition 1)
+	{
+		if(condition 2)
+		{
+		}
+		else
+		{
+		}
+
+	}
+	else
+	{
+		if(condition 3)
+		{
+		}
+		else
+		{
+		}
+	}
+
+
+first if num1>num2 then check num1>num3 
+if num1<num2 then check num2>num3
+
+
+
+
+
+
+if else ladder : when we have multiple possibilities for one conditional variable then we use if else ladder
+
+if (condition 1)
+	{
+
+	}
+else if (condition 2)
+	{
+	}
+else if (condition 3)
+	{
+	}
+else if (condition 4)
+	{
+	}
+     else
+	{
+	}
+
+
+switch :  when we have multiple possibilities for one conditional variable then we use if else ladder
+
+for loop : for loop is entry controlled loop, which is used to execute a block of code, n times till the condition is satisfied
+-> for loop is mainly used when the num of iterations are known  
+
+-> for loop executions involved in 4 steps 
+				i. Initialization
+				ii. Condition check
+				iii. Block of code
+				iv. Increment or decrement 
+
+ for in, for of, nested for, infinite loop
+syntax : for(init;condition;Incr/Decr)
+		{
+		  //block of code
+		}
+
+prime number : the number which is only divisible by 1 and itself, num of factors must be 1 and itself 
+
+i=1;
+i<=n;
+
+
+
+ 
+factorial
+
+
+num=7;count=0;i=1;
+
+7%1==0
+count=1;i=2;
+7%2==0 no count =1; i=3;
+7%3==0
+count 1
+7%4==0
+count=1
+7%5==0
+count 1
+7%6==0
+count 1;
+7%7==0 ;
+count =2; i=8
+
+8<=7
+
+
+  var num=parseInt(prompt("Enter a number"));
+        var count=0;
+        if(num==1)
+        document.write("not possible")
+        if(num==2)
+        document.write("prime")
+        if(num%2==0 || num%3==0)
+        document.write("not prime")
+        for(var i=5;i*i<=num;i+=6)
+        {
+        if(num%i==0 || num%(i+2)==0)
+            {
+                count++;
+            }
+        }
+        if(count==0){
+            document.write(`${num} is prime`)
+        }
+        else{
+            document.write(`${num} is not prime`)
+        }
+
+
+1,11,21,31,41,....121
+
+i+=10;
+
+while loop : while loop is also entry controlled loop, we can use while loop when the number of iterations are unknown 
+
+ Init
+while(condition)
+{
+//block of code
+Incr/Decr
+}
+
+var i=0;
+while(i<=10)
+{
+document.write(i);
+i++;
+}
+
+to count no of digits in a number?
+
+
+num=12345; count=0
+
+while num!=0
+
+num=num/10;
+
+num=12345/10; 
+num=1234; count=1;
+
+1234/10
+123 count =2
+
+123/10
+12 count=3
+
+12/10
+
+1 count=4
+
+1/10
+0 count =5
+
+
+num=1234;rev=0
+
+output:4321;
+
+rem=num%10;
+rev=rev*10+rem;
+num=parseInt(num/10)
+
+rem=1234/10
+rev=0*10+4
+
+rev=4
+
+rem=123/10
+rev=4*10+3
+
+rev=43
+
+rem=12/10
+rev=43*10+2
+rev=432
+
+rem=1/10
+rev=432*10+1
+rev=4321
+
+
+
+123
+
+find the num of digits
+
+3
+
+153%10
+
+sum+=3**3
+
+sum=27
+
+15%10
+
+sum+=5**3
+sum=152
+
+1%10
+
+sum+=1**3
+sum=153
+
+
+
+
+
+
+
+
+
+
+
+
+
+GitHub : version control system 
+
+
+
+branches : 1.0
+
+
+
+
+
+
+
